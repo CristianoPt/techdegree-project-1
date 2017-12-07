@@ -1,0 +1,260 @@
+/***************************
+  Import Other Css Files
+***************************/
+
+@import "normalize.css";
+
+
+/***************************
+      Main/Structure
+***************************/
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font: normal 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(50, 21, 31);
+  font-family: 'courier new', courier, 'times new roman';
+  min-width: 320px;
+}
+
+h1, h2, h3, h5, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+li {
+  padding: 5px;
+}
+
+/***************************
+      Title And Nav
+***************************/
+header {
+  background-image: linear-gradient(#78787a, #f1f1f1);
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.0em;
+}
+
+nav ul {
+  text-align: center;
+  padding: 0px;
+}
+
+nav ul li {
+  display: inline-block;
+  font-weight: 800;
+  border-right: solid 2px;
+  margin: 10px 0 0 -10px;
+}
+nav ul li a{
+  padding: 0 10px;
+}
+/***************************
+      Middle Section
+***************************/
+.index-background {
+  min-height: 850px;
+  background:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../images/main-background3.jpeg') no-repeat center / cover;
+  color: darkgrey;
+  padding-top: 25px;
+}
+
+.background {
+
+  /*background-image: url('../images/main-background3.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;        ALL OF THIS CAN BE SIMPLIFIED IN THE BACKGROUND PROPERTY .... LOOK BELOW
+  background-size: cover;*/
+  /*height: 90%;*/
+  max-width: 100%;
+    /*min-height: 950px;*/
+  background:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../images/main-background3.jpeg') no-repeat center / cover;
+  color: darkgrey;
+  padding: 25px 10px 0;
+}
+
+.index-text {
+  height: 80%;
+  width: 100%;
+  padding: 10%;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  line-height: 1.2em;
+}
+
+.bottom-gradient {
+       background-image: linear-gradient(to top,#78787a, #f1f1f1);
+       margin: 0;
+       padding: 30px;
+  }
+
+
+.sub-headers {
+    padding: 20px 10px;
+  }
+
+.middle-page ul {
+  list-style: none;
+  width: 55%;
+  margin: 40px auto 0;
+  text-align: center;
+}
+
+/***************************
+      Footer, Bottom Page
+***************************/
+
+footer {
+  background-color: #78787a;
+  width: 100%;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+}
+
+.social-icon {
+  padding: 10px;
+}
+
+/***************************
+      Links and Imgs
+***************************/
+
+nav a.selected {
+  color: rgb(0, 0, 0);
+}
+
+a:link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
+
+.clearfix::after {
+Content: '''';
+Display: table;
+Clear: both;
+}
+/*************************************************
+        ABOUT PAGE
+*************************************************/
+
+.about-text {
+  height: 80%;
+  width: 80%;
+  padding: 5px;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  line-height: 1.2em;
+}
+
+#about-photo {
+  float: right;
+  width: 40%;
+  padding: 2.5%;
+  border-radius: 10%;
+  max-width: 200px;
+  min-width: 160px;
+  margin-top: 10px;
+}
+
+
+
+
+/*************************************************
+        CONTACT PAGE
+*************************************************/
+.contact-wrap {
+  min-height: 600px;
+}
+.background li a {
+  color: rgb(38, 230, 202);
+}
+
+.contact {
+  padding: 20px;
+}
+.contact p{
+  padding-bottom: 10px;
+}
+.contact li {
+  padding: 20px 0;
+  list-style: none;
+  vertical-align: text-top;
+}
+.contact img {
+  width: 30px;
+  height: 30px;
+  background: rgb(38, 230, 202);
+  border-radius: 50%;
+}
+
+#cellphone {
+
+}
+
+#email {
+
+}
+
+/*************************************************
+        PROJECTS PAGE
+*************************************************/
+.center-portfolio {
+  margin: 0 auto;
+  width: 95%;
+}
+
+.portfolio {
+  width: 140px;
+  height: 140px;
+  background-color: rgb(0,0,0);
+  display: inline-block;
+  margin: 60px 10px;
+}
+
+.right-float {
+  float: right;
+  padding: 5%;
+}
+
+.left-float {
+  float: left;
+  padding: 5%;
+}
+
+#project-title {
+  color: black;
+  text-align: center;
+}

@@ -1,0 +1,55 @@
+/*This media works for really small screens such as iphone 5 and older models */
+@media only screen and (max-width: 370px) {
+  header li {
+    padding: 0;
+  }
+  .background {
+    padding: 0;
+  }
+  .about-text p{
+    font-size: .8em;
+    word-wrap: break-word;
+  }
+  .small-wrap {
+    min-height: 600px;
+  }
+  .portfolio {
+    margin: 60px 0;
+  }
+  .contact {
+    padding: 20px 15px;
+  }
+}
+
+/*This Media works for Iphone 6 and bigger phones */
+@media only screen and (min-width: 360px) and (max-width:499px) {
+  .about-text p{
+    font-size: .9em;
+  }
+  .small-wrap {
+    min-height: 600px;
+  }
+}
+
+/*This Media works for ipads and tablets */
+@media only screen and (min-width: 500px) and (max-width: 770px) {
+  h1 {
+    color: yellow;
+  }
+  .small-wrap {
+    min-height: 200px;
+  }
+}
+
+@media only screen and (min-width: 1000px),
+       only screen and (min-width:770px) and (orientation: landscape) {
+    .background {
+      height: 60vh;
+    }
+    header {
+      height: 15vh;
+    }
+    footer{
+      height: 25vh;
+    }
+}

@@ -33,23 +33,77 @@
 
 /*This Media works for ipads and tablets */
 @media only screen and (min-width: 500px) and (max-width: 770px) {
-  h1 {
-    color: yellow;
-  }
   .small-wrap {
     min-height: 200px;
+  }
+  html {
+    font-size: 1rem;
+  }
+  nav {
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
 @media only screen and (min-width: 1000px),
-       only screen and (min-width:770px) and (orientation: landscape) {
-    .background {
-      height: 60vh;
-    }
-    header {
-      height: 15vh;
-    }
-    footer{
-      height: 25vh;
-    }
+       only screen and (min-width:800px) and (orientation: landscape) {
+ html {
+   font-size: 1.2rem;
+ }
+ header h1 {
+   float: left;
+   padding-left: 25px;
+ }
+
+header{
+  padding-top: 15px;
+  overflow: auto;
+}
+nav {
+  width: 75%;
+  margin: 0 auto;
+}
+
+nav ul {
+  float: right;
+}
+.contact {
+  width: 80%;
+  margin: 0 auto;
+}
+.contact-1 {
+  float:left;
+  width: 40%;
+}
+.background {
+  overflow: auto;
+}
+/****BOTTOM HALF OF PAGE DESKTOP*******/
+#service1 {
+  float: left;
+}
+
+#service2 {
+  float: right;
+}
+
+.middle-page ul {
+  width: 50%;
+  padding: 20px;
+}
+.main-footer {
+  overflow: auto;
+}
+
+footer {
+  padding-top: 40px;
+  clear: both;
+  border: none;
+}
+
+.middle-page{
+    width: 70%;
+    margin: 0 auto;
+}
+
 }

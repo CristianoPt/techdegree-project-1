@@ -40,16 +40,18 @@
     font-size: 1rem;
   }
   nav {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
   }
 }
 
-@media only screen and (min-width: 1000px),
-       only screen and (min-width:800px) and (orientation: landscape) {
+/*-----------DESKTOP VERSION MEDIA QUERY BELOW ---------*/
+@media only screen and (min-width: 900px),
+       only screen and (min-width:850px) and (orientation: landscape) {
  html {
-   font-size: 1.2rem;
+   font-size: 1.3rem;
  }
+
  header h1 {
    float: left;
    padding-left: 25px;
@@ -59,24 +61,35 @@ header{
   padding-top: 15px;
   overflow: auto;
 }
+
 nav {
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
 }
 
 nav ul {
   float: right;
 }
+
 .contact {
   width: 80%;
   margin: 0 auto;
 }
+
 .contact-1 {
   float:left;
   width: 40%;
 }
+
+.contact-2 {
+  float: right;
+  width: 45%;
+  padding: 40px 0;
+}
+
 .background {
-  overflow: auto;
+ height: 100%;
+ min-height: 650px;
 }
 /****BOTTOM HALF OF PAGE DESKTOP*******/
 #service1 {
@@ -106,4 +119,30 @@ footer {
     margin: 0 auto;
 }
 
+#about-photo {
+  padding: 0 15px;
+}
+}
+
+@media only screen and (min-width:1050px) {
+  #about-photo {
+    max-width: 300px;
+    margin: 0 80px
+  }
+}
+/*MEDIA QUERY FOR LARGER FONT SIZE- BIGGER SCREENS*/
+@media only screen and (min-width: 1600px) {
+  html {
+    font-size: 1.5rem;
+  }
+  nav {
+    width: 75%;
+  }
+  #about-photo {
+    max-width: 400px;
+    padding: 0 15px;
+    }
+  .background p{
+    line-height: 2.5rem;
+  }
 }

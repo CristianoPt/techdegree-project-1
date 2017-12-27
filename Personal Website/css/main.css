@@ -52,7 +52,6 @@ header h1 {
 
 nav {
   text-align: center;
-
 }
 
 nav ul li {
@@ -81,12 +80,11 @@ nav ul li a{
   background:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../images/main-background3.jpeg') no-repeat center / cover;
   padding: 25px 10px 0;
   color: #d4d4d4;
+  display: flex;
 }
 
 .index-text {
   padding: 10%;
-  font-size: 1.4rem;
-  line-height: 1.2em;
 }
 
 .bottom-gradient {
@@ -165,13 +163,15 @@ Clear: both;
         ABOUT PAGE
 *************************************************/
 
+.about-text, .contact {
+  align-self: center;
+  height: auto;
+}
 .about-text {
-  height: 80%;
   width: 80%;
   padding: 5px;
-  font-size: 1.4rem;
   margin: 20px auto;
-  line-height: 1.2em;
+
 }
 
 #about-photo {
@@ -190,19 +190,23 @@ Clear: both;
 /*************************************************
         CONTACT PAGE
 *************************************************/
-.contact-wrap {
-  min-height: 600px;
-}
 .background li a {
   color: rgb(38, 230, 202);
 }
 
 .contact {
   padding: 20px;
+  min-height: 600px;
 }
+
+.contact-2 h2 {
+  text-align: left;
+}
+
 .contact p{
   padding-bottom: 10px;
 }
+
 .contact li {
   padding: 20px 0;
   list-style: none;
@@ -214,6 +218,7 @@ Clear: both;
   background: rgb(38, 230, 202);
   border-radius: 50%;
 }
+
 
 #cellphone {
 
